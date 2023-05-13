@@ -1,0 +1,261 @@
+//VariableDeTexto
+String texto0 = "Bienvenidos a la presentación \n Esto es una llave inglesa";
+String texto1;
+String texto2;
+String texto3;
+
+//VairiableDeImagen
+PImage imagen0;
+PImage imagen1;
+PImage imagen2;
+PImage imagen3;
+
+
+//VariableColorDeFondo
+color colorDeFondo1;
+color colorDeFondo2;
+color colorDelBoton;
+
+
+//VariableDeFuente
+PFont letra1;
+
+//fuentes
+PFont fuente1;
+
+
+//boolean
+boolean pasaImagenes;
+
+//movimiento
+float vel1;
+float botonX0;
+float botonY0;
+float tamBoton;
+float x0;
+float y0;
+float x1;
+float y1;
+float velx1;
+float vely1;
+float d;
+
+
+
+
+float posicionDelTextEnx2, posicionInicialEnX2;
+
+float textoAvanza = 1;
+
+
+//INT
+int flotantex1;
+int otraFlotantex1;
+int resultado;
+int contador = 0;
+int pantalla = 0;
+int masmas = 2;
+
+color colorTexto = #FFFFFF;
+
+boolean presion1, presion2;
+
+
+
+
+void setup() {
+    size(640, 480);
+    frameRate(30);
+
+
+//variables nombradas:
+
+    imagen0 = loadImage("imagen0.png");
+    imagen1 = loadImage("imagen1.png");
+    vel1 = 15;
+    flotantex1 = 50;
+    otraFlotantex1 = 15;
+    resultado = 2;
+    texto1 = "hola mundo";
+    velx1 = 2;
+    vely1 = 2;
+    x0 = width;
+    y0 = height;
+    botonX0 = 320;
+    botonY0 = 220;
+    tamBoton = 150;
+    //presion1 = true;
+    colorDelBoton = 0;
+    ellipseMode(RADIUS);
+    
+    x1 = random(0, width);
+    y1 = random(0, height);
+   
+
+
+//texto2 config
+    //texto2 = "chau mundo";
+    //posicionDelTextEnx2 = height;
+   // posicionInicialEnX2 = posicionDelTextEnx2;
+
+
+}
+
+void draw(){
+    
+//que dificil es el case, guardalo:
+    
+    println("contador: "+ contador);    
+  
+      //Pantalla 0        
+    switch (pantalla) {
+        
+                
+        case 0 :
+            background(#FFFFFF);
+            textSize(30);
+            fill(#FFFFFF);
+
+            circle(botonX0, botonY0, tamBoton);
+            d = dist(botonX0, botonY0, mouseX, mouseY);
+
+            if (d < tamBoton) {
+                fill(0);
+
+            } else {
+                fill(255);
+            }
+            ellipse(botonX0, botonY0, tamBoton, tamBoton);          
+            
+            
+       
+        break;	
+
+
+
+    //Pantalla 1    
+        case 1 :
+            contador = contador + masmas;   
+            colorDeFondo1 = 255;
+            background(#FFFFFF);
+            image(imagen0, 0, 0);
+            fill(1);
+            textSize(30);
+            text(texto1, x1, y1);
+            x1 = x1 + velx1;
+            y1 = y1 + vely1;
+        	
+              
+            if (x1 > width - 150){
+                velx1 = -4;
+                    
+            } else if (x1 < -0) {
+                velx1 = velx1 + 6;
+            }
+            if (y1 > height) {
+                vely1 = -4;
+                    
+            }else if (y1 < -0) {
+                vely1 = vely1 + 6;
+                    
+            }
+
+            if (contador >= 1000) {
+                contador = 0;
+                pantalla = 2;
+            }
+        break;
+
+
+
+        //Pantalla 2   
+        case 2 :
+            background(0);
+            image(imagen1, x1, y1);
+
+
+
+            if (contador >= 1000) {
+                contador = 0;
+                pantalla = 0;
+                
+
+            }
+        break;	
+
+    }     
+            
+}
+
+            
+
+void mousePressed(){
+    if (pantalla == 0){
+        if (presion1 == true) {
+            colorDelBoton = 255;
+            pantalla = 1;
+        }
+    }
+}
+
+void mouseMoved(){
+    //if (mouseX > botonX0 && mouseX < botonX0 + tamanioEnXBoton
+    //&& mouseY > posicionYBoton && mouseY < posicionYBoton + tamanioEnYBoton) {
+    //colorDeLineaDeBoton = color(0, 255, 0);
+    //colorDelBoton = color(255, 255, 0);
+    //colorDelTexto = color(0, 255, 255);
+    //botonOk = true;
+  //} else {
+    //colorDeLineaDeBoton  = 255;
+    //colorDeBoton = 255;
+    //colorDeTexto = 200;
+    //botonOk = false;
+  //}
+}
+
+
+
+
+
+        //Pantalla 2
+        
+
+  //pantalla 3
+          
+
+ //  case 2:
+
+  //  break;
+
+ //case 0 :
+    
+      //  if (textoAvanza == 1) {
+          //  posicionDelTextEnx1 = posicionDelTextEnx1 + vel1;
+         //   if (posicionDelTextEnx1 > height + 200) {
+          //      textoAvanza = 0;
+          //  }            
+      //  }else if (textoAvanza == 0) {
+       //         posicionDelTextEnx1 = posicionDelTextEnx1 - vel1;
+        //    }
+        //    if (posicionDelTextEnx1 <= -height) {
+        //        textoAvanza = 1;
+        //    }
+            
+ //break;	
+ //case 1 :
+    
+
+ //break;	     
+    
+//case 2 :
+    
+//break;	
+
+
+
+
+//rect(botonX0, botonY0, tamBoton0X, tamBoton0Y);
+            
+            //textSize(15);
+           // fill(0);
+           // text("Reiniciar", botonX0, botonY0);
