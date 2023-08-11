@@ -28,7 +28,7 @@ String sig = "Siguiente";
 String reiniciar = "Reiniciar";
 String creditos ="Creditos";
 
-boolean opa2=false;
+
 
 
 String textos [];
@@ -37,7 +37,22 @@ String textos [];
 color colorIniciar = (#FFFFFF);
 color colorBoton0= (#000000);
 
-boolean opa = false;
+boolean opa1 = false;
+boolean opa2 = false;
+boolean opa3 = false;
+boolean opa4 = false;
+boolean opa5 = false;
+boolean opa6 = false;
+boolean opa7= false;
+boolean opa8 = false;
+boolean opa9 = false;
+boolean opa10 = false;
+boolean opa11 = false;
+boolean opa12 = false;
+boolean opa13 = false;
+boolean opa14 = false;
+boolean opa15 = false;
+
 boolean prueba = false;
 
 boolean pantallaDesicionA = false;
