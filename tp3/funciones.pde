@@ -14,13 +14,13 @@ void boton0(){
             colorBoton0=(#FFFFFF);
             colorIniciar=(#000000);
             text0Tam=20;
-            opa = true;
+            opa1 = true;
         }else {
             colorBoton0=(#000000);
             colorIniciar=(#FFFFFF);
             text0Tam = 15;
         }
-        if (mousePressed && opa==true ) {
+        if (mousePressed && opa1==true ) {
             pant=1;
         }
         
@@ -56,14 +56,14 @@ void boton1AB(){
             colorBoton1A = (#000000);
             colorTextBoton1A =(#FFFFFF);
             text1ATam = 30;
-            pantallaDesicionA = true;
+            opa2 = true;
         }else {
             colorBoton1A=(#000000);
             colorTextBoton1A =(#FFFFFF);
             text1ATam = 15;
-            pantallaDesicionA = false;
+            opa2 = false;
         }
-        if (mousePressed && pantallaDesicionA==true ) {
+        if (mousePressed && opa2==true ) {
             pant=2;
         }
 
@@ -76,15 +76,15 @@ void boton1AB(){
             colorBoton1B = (#000000);
             colorTextBoton1B =(#FFFFFF);
             text1BTam = 30;
-            pantallaDesiscionB=true;
+            opa3=true;
             
         }else {
             colorBoton1B=(#000000);
             colorTextBoton1B =(#FFFFFF);
             text1BTam = 15;
-            pantallaDesiscionB=false;
+            opa3=false;
         }
-        if (mousePressed && pantallaDesiscionB==true ) {
+        if (mousePressed && opa3==true ) {
             pant=3;
         }
 
@@ -116,14 +116,14 @@ void boton2AB(){
             colorBoton1A = (#FFFFFF);
             colorTextBoton1A =(#000000);
             text1ATam = 30;
-            pantallaDesicionA  = true;
+            opa4  = true;
         }else {
             colorBoton1A=(#000000);
             colorTextBoton1A =(#FFFFFF);
             text1ATam = 15;
-            pantallaDesicionA  = false;
+            opa4  = false;
         }
-        if (mousePressed && pantallaDesicionA ==true ) {
+        if (mousePressed && opa4 ==true ) {
             pant=6;
         }
 
@@ -131,15 +131,15 @@ void boton2AB(){
             colorBoton1B = (#000000);
             colorTextBoton1B =(#FFFFFF);
             text1BTam = 30;
-            pantallaDesiscionB=true;
+            opa5=true;
             
         }else {
             colorBoton1B=(#000000);
             colorTextBoton1B =(#FFFFFF);
             text1BTam = 15;
-            pantallaDesiscionB=false;
+            opa5=false;
         }
-        if (mousePressed && pantallaDesiscionB==true ) {
+        if (mousePressed && opa5==true ) {
             pant=10;
         }
 
@@ -175,14 +175,14 @@ void boton3AB(){
             colorBoton1A = (#FFFFFF);
             colorTextBoton1A =(#000000);
             text1ATam = 30;
-            primerFinalA = true;
+            opa13 = true;
         }else {
             colorBoton1A=(#000000);
             colorTextBoton1A =(#FFFFFF);
             text1ATam = 15;
-            primerFinalA = false;
+            opa13 = false;
         }
-        if (mousePressed && primerFinalA==true ) {
+        if (mousePressed && opa13==true ) {
             pant=4;
         }
 
@@ -190,15 +190,15 @@ void boton3AB(){
             colorBoton1B = (#FFFFFF);
             colorTextBoton1B =(#000000);
             text1BTam = 30;
-            primerFinalB=true;
+            opa14=true;
             
         }else {
             colorBoton1B=(#000000);
             colorTextBoton1B =(#FFFFFF);
             text1BTam = 15;
-            primerFinalB=false;
+            opa14=false;
         }
-        if (mousePressed && primerFinalB==true ) {
+        if (mousePressed && opa14==true ) {
             pant=5;
         }
 
@@ -283,14 +283,14 @@ void botonSig6(){
             colorBoton0 = (#000000);
             colorIniciar=(#FFFFFF);
             textSTam = 20;
-            opa = true;
+            opa6 = true;
         }else {
             colorBoton0=(#FFFFFF);
             colorIniciar=(#000000);
             textSTam = 15;
-            opa=false;
+            opa6=false;
         }
-        if (mousePressed && opa==true ) {
+        if (mousePressed && opa6==true ) {
             pant=7;
         }
 
@@ -310,14 +310,14 @@ void botonSig7(){
             colorBoton0 = (#000000);
             colorIniciar=(#FFFFFF);
             textSTam = 20;
-            opa2 = true;
+            opa7 = true;
         }else {
             colorBoton0=(#FFFFFF);
             colorIniciar=(#000000);
             textSTam = 15;
-            opa2=false;
+            opa7=false;
         }
-        if (mousePressed && opa2==true ) {
+        if (mousePressed && opa7==true ) {
             pant=8;
         }
 
@@ -349,14 +349,14 @@ void botonSig8(){
             colorBoton0 = (#000000);
             colorIniciar=(#FFFFFF);
             textSTam = 20;
-            opa = true;
+            opa8 = true;
         }else {
             colorBoton0=(#FFFFFF);
             colorIniciar=(#000000);
             textSTam = 15;
-            opa=false;
+            opa8=false;
         }
-        if (mousePressed && opa2==true ) {
+        if (mousePressed && opa8==true ) {
             pant=9;
         }
 
@@ -387,14 +387,14 @@ void botonReinicio(){
             colorBoton0 = (#000000);
             colorIniciar=(#FFFFFF);
             textSTam = 20;
-            opa2= true;
+            opa9= true;
         }else {
             colorBoton0=(#FFFFFF);
             colorIniciar=(#000000);
             textSTam = 15;
-            opa2=false;
+            opa9=false;
         }
-        if (mousePressed && opa2==true ) {
+        if (mousePressed && opa9==true ) {
             pant=0;
         }
 
@@ -424,14 +424,14 @@ void boton10AB(){
             colorBoton1A = (#FFFFFF);
             colorTextBoton1A =(#000000);
             text1ATam = 30;
-            primerFinalA = true;
+            opa10 = true;
         }else {
             colorBoton1A=(#000000);
             colorTextBoton1A =(#FFFFFF);
             text1ATam = 15;
-            primerFinalA = false;
+            opa10 = false;
         }
-        if (mousePressed && primerFinalA==true ) {
+        if (mousePressed && opa10==true ) {
             pant=11;
         }
 
@@ -439,15 +439,15 @@ void boton10AB(){
             colorBoton1B = (#FFFFFF);
             colorTextBoton1B =(#000000);
             text1BTam = 30;
-            primerFinalB=true;
+            opa11=true;
             
         }else {
             colorBoton1B=(#000000);
             colorTextBoton1B =(#FFFFFF);
             text1BTam = 15;
-            primerFinalB=false;
+            opa11=false;
         }
-        if (mousePressed && primerFinalB==true ) {
+        if (mousePressed && opa11==true ) {
             pant=12;
         }
 
@@ -533,14 +533,14 @@ void botonCreditos(){
             colorBotonC = (#FFFFFF);
             bTC=(#000000);
             textSTam = 20;
-            opa2= true;
+            opa12= true;
         }else {
             colorBotonC=(#000000);
             bTC=(#FFFFFF);
             textSTam = 15;
-            opa2=false;
+            opa12=false;
         }
-        if (mousePressed && opa2==true ) {
+        if (mousePressed && opa12==true ) {
             pant=13;
         }
 
